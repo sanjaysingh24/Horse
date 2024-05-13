@@ -1,0 +1,321 @@
+/******************** Header CSS start ***********************/
+
+body{
+    font-family: "Poppins-Regular";
+    font-weight: 500;
+}
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url('../fonts/Poppins-Regular.ttf');
+
+	
+}
+@font-face {
+	font-family: 'Poppins-Medium';
+	src: url('../fonts/Poppins-Medium.ttf');
+
+	
+}
+@font-face {
+	font-family: 'Playfair-Display-italic';
+	src:url('../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf')
+
+	
+}
+header {
+    background: #fff;
+    z-index: 250;
+    height: var(--header-height);
+}
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    height: var(--header-height);
+}
+.menu-btn {
+    left: 3px;
+}
+.menu-btn, .close-btn {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    display: none;
+    cursor: pointer;
+}
+.menu-btn {
+    top: 13px !important;
+}
+.header .menu .drawer {
+    display: flex;
+    height: var(--header-height);
+}
+.nav-menus {
+    column-gap: 40px;
+    flex-direction: row;
+}
+.dropdown {
+    position: initial;
+}
+.header .menu .drawer a {
+    text-transform: capitalize;
+    transition: all 0.1s linear;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: #AD543B;
+    font-size: 16px;
+    position: relative;
+    font-family: 'Poppins-Medium';
+}
+.nav-menus .nav-link {
+    color: #AD543B;
+}
+.nav-menus .dropdown-item {
+    color: #AD543B;
+    font-family: 'Poppins-Regular' !important;
+}
+.header .menu .drawer .nav-item > a:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #AD543B;
+    bottom: 0;
+    left: 0;
+    transition: 0, 3s ease;
+}
+.nav-link.dropdown-toggle-icon.show-modal:focus::after {
+    transform: rotate(180deg);
+}
+.dropdown-toggle-icon::after {
+    content: '';
+    width: 15px;
+    background: url(../images/down.png) no-repeat center;
+    height: 15px;
+    background-size: 10px;
+    transition: 0.3s ease-in;
+}
+.nav-menus .dropdown-menu {
+    top: 20px !important;
+    z-index: 999;
+}
+.navbar-nav .dropdown-menu {
+    padding: 20px;
+    border-top: 1px solid #B8604733;
+    border-radius: 0;
+}
+.nav-menus .dropdown-menu li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.navbar-nav .dropdown-menu {
+    position: static;
+}
+.mega-menu {
+    width: 100%;
+    top: 20px !important;
+    transition: 0.5s ease-in-out;
+}
+.mega-menu-heading {
+    color: #AD543B;
+    font-family: 'Poppins-Medium';
+    text-transform: uppercase;
+}
+.mega-menu p a {
+    text-decoration: none;
+    font-family: 'Poppins-Medium';
+    opacity: 0.7;
+}
+.nav-buttons {
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+}
+.search-menu {
+    /* display: none; */
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    z-index: -1;
+    background: #fff;
+    padding: 20px 0;
+    transform: translate(0px, -20px);
+    transition: 0.5s ease-in;
+    padding: 20px;
+}
+.search-menu h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #AD543B;
+}
+.search-menu .inner-content {
+    font-family: "Playfair-Display-italic";
+    font-style: italic;
+    color: #F3BD49;
+}
+.input-wrap {
+    position: relative;
+    margin: 20px 0;
+}
+.nav-buttons .search-btn {
+    border: 1px solid #AD543B;
+    border-radius: 50%;
+    padding: 14px;
+}
+.search-btn img {
+    width: 20px;
+}
+.show {
+    /* display: block; */
+    opacity: 1;
+    z-index: 9;
+    transform: translate(0px, 0px);
+}
+.search-box {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid #AD543B;
+    font-size: 25px;
+    color: #AD543B;
+}
+.search-box:focus-visible {
+    outline: none;
+}
+.input-wrap span {
+    position: absolute;
+    right: 6px;
+    font-size: 40px;
+    bottom: 0px;
+    cursor: pointer;
+    color: #AD543B;
+}
+.nav-buttons .log-in-btn {
+    border: 1px solid #AD543B;
+    padding: 10px 14px 10px 14px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #AD543B;
+    font-family: 'Poppins-Medium';
+}
+.nav-buttons .cart-btn {
+    border: 1px solid #AD543B;
+    padding: 10px 14px 10px 14px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #AD543B;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins-Medium';
+}
+.product-wrap a {
+    text-decoration: none;
+}
+.product-wrap .card {
+    border: none;
+}
+.product-wrap .card-body {
+    padding: 0;
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+}
+.product-info .product-title {
+    color: #AD543B;
+    font-size: 18px;
+}
+.product-info .product-price {
+    color: #CA8D00;
+    font-size: 18px;
+}
+
+@media (max-width: 920px) {
+    .menu-btn, .close-btn {
+        display: block;
+    }
+    .header .logo {
+        margin-left: 45px;
+    }
+    .header .menu {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: -925px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+    }
+    .header .menu .drawer {
+        box-shadow: 2px 0 12px rgb(0 0 0 / 40%);
+        padding-top: 50px;
+        height: 100%;
+        width: 225px;
+        background: #fff;
+        flex-direction: column;
+        position: fixed;
+        left: -240px;
+        transition: all 200ms linear;
+        overflow: auto;
+    }
+    .blur {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(15px);
+        left: 0 !important;
+    }
+    .drawer-visible {
+        left: 0 !important;
+    }
+}
+
+@media (max-width: 820px) {
+    .nav-menus {
+        flex-direction: column;
+    }
+    .header .menu .drawer .nav-menus a {
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #AD543B33;
+        margin: 5px 10px;
+    }
+    .navbar-nav .dropdown-menu {
+        padding: 15px 0;
+    }
+    .nav-menus .dropdown-menu {
+        top: 0px !important;
+        width: 100%;
+        left: 0px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 10px 0;
+    }
+    .nav-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: auto;
+    }
+    .search-menu h2 {
+        font-size: 28px;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+/******************** Header CSS end ***********************/

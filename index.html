@@ -4,8 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h2>Horse</h2>
+     <!-- Header -->
+  <div class="container-fluid">
+    <header>
+      <div class="header">
+        <button class="menu-btn" aria-label="Open Menu">
+          <a class="navbar-brand" href="#"><img src="./images/menu.png" alt="" srcset="" /></a>
+        </button>
+        <div class="logo">
+          <a class="navbar-brand" href="/"><img src="./images/logo.png" alt="logo" class="img-fluid" srcset="" /></a>
+        </div>
+        <nav class="menu">
+          <div class="drawer">
+            <button class="close-btn" aria-label="Close Menu">
+              <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg" aria-label="Close Menu"
+                role="img">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+              </svg>
+            </button>
+            <ul class="navbar-nav nav-menus">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle-icon" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Artwork
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./about.html">Our Story</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Beauty Rituals</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle-icon" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  SHOP
+                </a>
+                <ul class="dropdown-menu mega-menu">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-1">
+                        <p class="mega-menu-heading">VIEW ALL</p>
+                      </div>
+                      <div class="col-lg-3">
+                        <p class="mega-menu-heading">Skin Concern</p>
+                        <p><a href="">Dryness + Dehydrated</a></p>
+                        <p><a href="">Dullness + Uneven tone</a></p>
+                        <p><a href="">Dark spots + Hyperpigmentation</a></p>
+                        <p><a href="">Clogged + Congested</a></p>
+                        <p><a href="">Sensitive + Inflamed</a></p>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mega-menu-heading">Product Type</p>
+                        <p><a href="">Skincare</a></p>
+                        <p><a href="">Sets & Minis</a></p>
+                        <p><a href="">Merch</a></p>
+                      </div>
+                      <div class="col-lg-2">
+                        <p class="mega-menu-heading">Featured</p>
+                        <p><a href="">New</a></p>
+                        <p><a href="">Bestsellers</a></p>
+                        <p><a href="">Viral</a></p>
+                        <p><a href="">Save $5</a></p>
+                        <p><a href="">Back in Stock</a></p>
+                        <p></p>
+                      </div>
+                      <div class="col-lg-3 offset-lg-1">
+                        <div class="product-wrap">
+                          <a href="#">
+                            <div class="card">
+                              <div class="card-body">
+                                <img src="./images/product.png" alt="img" srcset="" class="img-fluid" />
+                                <div class="product-info">
+                                  <p class="product-title">
+                                    African beauty butter – Intensive dry skin
+                                    treatment
+                                  </p>
+                                  <p class="product-price">$36</p>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Exhibitions & Awards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Installations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="blank"></div> -->
+        </nav>
+        <ul class="navbar-nav nav-buttons d-flex">
+          <li class="nav-item">
+            <a href="#" class="search-btn d-flex"><img src="./images/loupe.png" alt="" srcset="" /></a>
+          </li>
+          <li class="nav-item">
+            <button class="btn cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+              aria-controls="staticBackdrop">
+              <img src="./images/cart.png" alt="" srcset="" />0</a>
+            </button>
+
+            <div class="offcanvas offcanvas-end cart-modal" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+              aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header cart-header">
+                <h5 class="offcanvas-title cart-title" id="offcanvasRightLabel">
+                  Your <span class="inner-heading">order</span>
+                </h5>
+                <button type="button" class="btn-close cart-cross" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <hr>
+              <div class="inner-order-wrap">
+                <div class="your-order-wrap pt-3">
+                  <div class="single-order-wrap">
+                    <div class="left-single-order-col">
+                      <img src="./images/order-img.png" alt="img" class="img-fluid" srcset="" />
+                      <div class="order-product-info">
+                        <p class="order-product-title">Barrier Repair Cloud Cream</p>
+                        <p class="order-product-subtext">Scent: Kenyan Hibiscus + Moroccan Rose</p>
+                      </div>
+
+                    </div>
+                    <div class="right-single-order-col">
+                      <div class="order-quantity">
+                        <button class="order-decrease order-btn" fdprocessedid="9lqjua">-</button>
+                        <span>1</span>
+                        <button class="order-increase order-btn" fdprocessedid="iofiy6">+</button>
+                      </div>
+                      <p class="order-price">$34,20</p>
+                      <p class="mb-0 order-cancle"><a href=""><img src="./images/order-cancle.png" alt="img"
+                            class="img-fluid" srcset="" /></a></p>
+                    </div>
+                  </div>
+                  <div class="mb-3 form-check subscribe-check-wrap">
+                    <div class="subs-select-wrap">
+                      <input type="checkbox" class="form-check-input ms-0 mt-0" id="subandsaveCheck1">
+                      <label class="form-check-label" for="subandsaveCheck1">Subscribe and save 5% + get free shipping
+                        every</label>
+                    </div>
+
+                    <div class="col-auto order-month-select">
+                      <select class="form-select custom_Select" id="autoSizingSelect">
+                        <option selected>1 Month</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="your-order-wrap pb-3">
+                  <div class="single-order-wrap">
+                    <div class="left-single-order-col">
+                      <img src="./images/order-img.png" alt="img" class="img-fluid" srcset="">
+                      <div class="order-product-info">
+                        <p class="order-product-title">Mini African Beauty Butters</p>
+                      </div>
+
+                    </div>
+                    <div class="right-single-order-col">
+                      <div class="order-quantity">
+                        <button class="order-decrease order-btn" fdprocessedid="9lqjua">-</button>
+                        <span>1</span>
+                        <button class="order-increase order-btn" fdprocessedid="iofiy6">+</button>
+                      </div>
+                      <p class="order-price">$36</p>
+                      <p class="mb-0 order-cancle"><a href=""><img src="./images/order-cancle.png" alt="img"
+                            class="img-fluid" srcset=""></a></p>
+                    </div>
+                  </div>
+                  <div class="mb-3 form-check subscribe-check-wrap">
+                    <div class="subs-select-wrap">
+                      <input type="checkbox" class="form-check-input ms-0 mt-0" id="subsCheck1">
+                      <label class="form-check-label" for="subsCheck1">Subscribe and save 5% + get free shipping</label>
+                    </div>
+
+                  </div>
+                </div>
+                <hr>
+                <div class="you-may-like-wrap py-4">
+                  <h2 class="you-may-heading">Your may also like</h2>
+                  <div class="single-like-wrap">
+                    <div class="left-single-like-col">
+                      <img src="./images/like-product-img1.png" alt="img" class="img-fluid" srcset="" />
+                      <div class="like-product-info">
+                        <p class="like-product-title">Mini African Beauty Butters</p>
+                        <p class="like-product-price">$36</p>
+                      </div>
+
+                    </div>
+                    <div class="right-single-like-col">
+                      <p><a href="">ADD <img src="./images/cart-icon.png" alt="img" class="img-fluid" srcset="" /></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="single-like-wrap">
+                    <div class="left-single-like-col">
+                      <img src="./images/like-product-img1.png" alt="img" class="img-fluid" srcset="" />
+                      <div class="like-product-info">
+                        <p class="like-product-title">Mini African Beauty Butters</p>
+                        <p class="like-product-price">$36</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="offcanvas-body">
+                <div class="subtotal-wrap">
+                  <p>Subtotal:</p>
+                  <p>$70,2</p>
+                </div>
+                <p class="checkout-btn"><a href="#">CHECK OUT</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
 </body>
 </html>
